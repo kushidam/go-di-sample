@@ -9,13 +9,13 @@ type ICalculator interface {
 }
 
 type User struct {
-	Name string
+	Name   string
 	SayCal ICalculator
 }
 
 func NewUser(name string, age int, sayCal ICalculator) *User {
 	return &User{
-		Name: name,
+		Name:   name,
 		SayCal: sayCal,
 	}
 }
